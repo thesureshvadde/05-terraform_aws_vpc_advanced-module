@@ -8,7 +8,7 @@ resource "aws_vpc_peering_connection" "peering" {
   auto_accept = true
   tags = merge(
     {
-      Name = "perring connection between Default and ${var.project_name}"
+      Name = "${var.project_name}-${var.env}"
     },
     var.common_tags
   )

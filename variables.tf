@@ -21,6 +21,9 @@ variable "common_tags" {
   default = {}
 }
 
+variable "env" {
+}
+
 variable "vpc_tags" {
   type = map
   default = {}
